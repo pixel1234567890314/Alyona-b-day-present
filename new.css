@@ -1346,3 +1346,28 @@ footer {
     min-height: 16rem;
   }
 }
+
+
+
+.video-frame {
+  display: block;
+  width: fit-content;
+  margin: 60px auto;
+  padding: 10px;
+  border-radius: 16px;
+  background: #121111;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25),
+              0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.video-frame:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3),
+              0 6px 14px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+.video-frame iframe {
+  border-radius: 8px;
+  display: block;
+}
